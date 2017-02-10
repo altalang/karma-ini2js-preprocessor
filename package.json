@@ -4,7 +4,7 @@
   "description": "Compiles INI files to JS source on the fly. ",
   "main": "ini2js.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ini2js-spec.js"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,10 @@
   "bugs": {
     "url": "https://github.com/altalang/karma-ini2js-preprocessor/issues"
   },
-  "homepage": "https://github.com/altalang/karma-ini2js-preprocessor"
+  "homepage": "https://github.com/altalang/karma-ini2js-preprocessor",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.7"
+  }
 }
