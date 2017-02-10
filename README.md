@@ -23,7 +23,7 @@ npm install karma-ini2js-preprocessor --save-dev
 
 ## How does it work ?
 
-This preprocessor converts HTML files into JS objects and publishes them in the
+This preprocessor converts INI files into JS objects and publishes them in the
 global `window.__ini__` so that they may be used for tests.
 
 ex: `config.ini`
@@ -37,7 +37,7 @@ becomes
 ```javascript
 window.__ini__['config.ini'] = {
     config: {
-        "debug": "true"
+        debug: 'true'
     }
 }
 ```
