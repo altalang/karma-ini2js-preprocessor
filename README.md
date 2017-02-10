@@ -1,4 +1,4 @@
-# karma-ini2js-preprocessor
+# karma-ini2js-preprocessor [![Build Status](https://travis-ci.org/altalang/karma-ini2js-preprocessor.svg?branch=master)](https://travis-ci.org/altalang/karma-ini2js-preprocessor)
 
 > preprocessor for converting INI files to JS test fixtures
 
