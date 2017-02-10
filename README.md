@@ -30,6 +30,7 @@ ex: `config.ini`
 ```ini
 [config]
 debug = true
+address = http://altalang.com/
 ```
 
 becomes
@@ -37,7 +38,8 @@ becomes
 ```javascript
 window.__ini__['config.ini'] = {
     config: {
-        debug: 'true'
+        debug: true,
+        address: 'http://altalang.com/'
     }
 }
 ```
