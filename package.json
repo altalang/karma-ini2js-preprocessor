@@ -1,0 +1,29 @@
+{
+  "name": "karma-ini2js-preprocessor",
+  "version": "0.1.0",
+  "description": "Compiles INI files to JS source on the fly. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/altalang/karma-ini2js-preprocessor.git"
+  },
+  "keywords": [
+    "karma-plugin",
+    "karma-preprocessor"
+  ],
+  "author": "Brad Wells <bwells@altalang.com>",
+  "dependencies": {
+    "ini": ">=1.3.4"
+  },
+  "peerDependencies": {
+    "karma": ">=0.9"
+  },
+  "license": "MIT ",
+  "bugs": {
+    "url": "https://github.com/altalang/karma-ini2js-preprocessor/issues"
+  },
+  "homepage": "https://github.com/altalang/karma-ini2js-preprocessor#readme"
+}
