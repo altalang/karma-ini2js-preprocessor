@@ -16,7 +16,7 @@
   ],
   "author": "Brad Wells <bwells@altalang.com>",
   "dependencies": {
-    "ini": ">=1.3.4"
+    "ini": "^1.3.4"
   },
   "peerDependencies": {
     "karma": ">=0.9"
@@ -25,5 +25,5 @@
   "bugs": {
     "url": "https://github.com/altalang/karma-ini2js-preprocessor/issues"
   },
-  "homepage": "https://github.com/altalang/karma-ini2js-preprocessor#readme"
+  "homepage": "https://github.com/altalang/karma-ini2js-preprocessor"
 }
