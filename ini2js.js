@@ -9,6 +9,8 @@ var createINI2JSPreprocessor = function(logger, basePath) {
     var log = logger.create('preprocessor.ini2js');
 
     return function(content, file, done) {
+        log.debug('Processing "%s"', file.originalPath);
+
         var parsed = ini.parse(content);
         parsed = JSON.stringify(parsed);
 

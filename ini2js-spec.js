@@ -30,15 +30,21 @@ describe('ini2js', function() {
 
     describe('once initialized', function() {
 
-        let logger, preprocess, window;
+        let debug, logger, preprocess, window;
 
         beforeEach(function() {
             // require a window object to eval() content against
             window = {};
 
-            logger = {};
-            let create = sinon.spy();
-            logger.create = create;
+            // created a stubbed logger.create
+            // which returns a log with a stubbed debug method
+            logger = {
+                create: function() {} // eslint-disable-line no-empty-function
+            };
+            debug = sinon.spy();
+            sinon.stub(logger, 'create', function() {
+                return {debug: debug};
+            });
 
             let basePath = '/base';
             preprocess = mod[1](logger, basePath);
@@ -54,6 +60,7 @@ describe('ini2js', function() {
 
             preprocess(content, fileSpec, function(response) {
                 expect(logger.create.called).to.be.true;
+                expect(debug.called).to.be.true;
 
                 expect(response).to.be.a('string');
 
