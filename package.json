@@ -2,7 +2,7 @@
   "name": "karma-ini2js-preprocessor",
   "version": "0.1.0",
   "description": "Compiles INI files to JS source on the fly. ",
-  "main": "index.js",
+  "main": "ini2js.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

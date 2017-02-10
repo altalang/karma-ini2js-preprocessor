@@ -5,9 +5,7 @@ var TEMPLATE = '' +
     'window.__ini__ = window.__ini__ || {};\n' +
     'window.__ini__[\'%s\'] = %s;';
 
-var createINI2JSPreprocessor = function(logger, basePath, config) {
-    config = typeof config === 'object' ? config : {};
-
+var createINI2JSPreprocessor = function(logger, basePath) {
     var log = logger.create('preprocessor.ini2js');
 
     return function(content, file, done) {
@@ -20,7 +18,7 @@ var createINI2JSPreprocessor = function(logger, basePath, config) {
     }
 };
 
-createINI2JSPreprocessor.$inject = ['logger', 'config.basePath', 'config.ini2JSPreprocessor'];
+createINI2JSPreprocessor.$inject = ['logger', 'config.basePath'];
 
 module.exports = {
     'preprocessor:ini2js': ['factory', createINI2JSPreprocessor]
