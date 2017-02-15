@@ -16,7 +16,7 @@ your `package.json`.
 }
 ```
 
-You can simple do it by:
+You can simply do it by:
 ```bash
 npm install karma-ini2js-preprocessor --save-dev
 ```
